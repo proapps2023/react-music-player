@@ -4,5 +4,11 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+  color: rgb(43, 42, 44);
+}
+
 @import "./song";
 @import "./player";
