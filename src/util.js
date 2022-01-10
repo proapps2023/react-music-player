@@ -2,6 +2,16 @@ import { v4 as uuidv4 } from "uuid";
 
 function chillHop() {
     return [
+
+        {
+            name:"Sunny in Saint Petersburg",
+            artist: "Saib",
+            cover: "https://chillhop.com/wp-content/uploads/2021/03/75adfe0661d06a9ea66d9c2e99b31e92ae450ebe-1024x1024.jpg",
+            id: uuidv4(),
+            color: ["#F24933", "#F9B437"],
+            audio: "https://mp3.chillhop.com/serve.php/?mp3=16076",
+            active: true,
+        },
         {
             name:"Perspective",
             artist: "fantompower",
@@ -9,7 +19,7 @@ function chillHop() {
             id: uuidv4(),
             color: ["#D7B0D5", "#CBDFE0"],
             audio: "https://mp3.chillhop.com/serve.php/?mp3=22794",
-            active: true,
+            active: false,
         },
         {
             name:"Waybackwhen",
@@ -27,15 +37,6 @@ function chillHop() {
             id: uuidv4(),
             color: ["#008781", "#6D8E8F"],
             audio: "https://mp3.chillhop.com/serve.php/?mp3=7814",
-            active: false,
-        },
-        {
-            name:"Sunny in Saint Petersburg",
-            artist: "Saib",
-            cover: "https://chillhop.com/wp-content/uploads/2021/03/75adfe0661d06a9ea66d9c2e99b31e92ae450ebe-1024x1024.jpg",
-            id: uuidv4(),
-            color: ["#F24933", "#F9B437"],
-            audio: "https://mp3.chillhop.com/serve.php/?mp3=16076",
             active: false,
         },
         {
