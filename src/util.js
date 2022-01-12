@@ -48,6 +48,42 @@ function chillHop() {
             audio: "https://mp3.chillhop.com/serve.php/?mp3=8094",
             active: false,
         },
+        {
+            name:"Sozu",
+            artist: "mommy, Sleepy Fish",
+            cover: "https://chillhop.com/wp-content/uploads/2021/05/1245c0271290a3196328c0cf4aaa910cd873dfe7-1024x1024.jpg",
+            id: uuidv4(),
+            color: ["#578CCE", "#E9D6D0"],
+            audio: "https://mp3.chillhop.com/serve.php/?mp3=19062",
+            active: false,
+        },
+        {
+            name:"Sleepover",
+            artist: "Nymano, JK the Sage",
+            cover: "https://chillhop.com/wp-content/uploads/2020/09/09fb436604242df99f84b9f359acb046e40d2e9e-1024x1024.jpg",
+            id: uuidv4(),
+            color: ["#191516", "#82698E"],
+            audio: "https://mp3.chillhop.com/serve.php/?mp3=10130",
+            active: false,
+        },
+        {
+            name:"Collages",
+            artist: "Sleepy Fish",
+            cover: "https://chillhop.com/wp-content/uploads/2020/07/cd6ad456b39b442e4d39e346c5f778df969326e6-1024x1024.jpg",
+            id: uuidv4(),
+            color: ["#7BC8DD", "#D64A59"],
+            audio: "https://mp3.chillhop.com/serve.php/?mp3=7985",
+            active: false,
+        },
+        {
+            name:"Perspective",
+            artist: "Barnes Blvd.",
+            cover: "https://chillhop.com/wp-content/uploads/2019/09/5dec57f342128aac26584502148c6415dce9a1e5-1024x1001.jpg",
+            id: uuidv4(),
+            color: ["#FDE1A9", "#A46874"],
+            audio: "https://mp3.chillhop.com/serve.php/?mp3=8046",
+            active: false,
+        },
     ];
 }
 
