@@ -3,6 +3,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-top: 2rem;
   button {
     background: transparent;
     border: none;
@@ -18,5 +19,13 @@ nav {
   .library-active {
     background: rgb(65, 65, 65);
     color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 5;
+    }
   }
 }

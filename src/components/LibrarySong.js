@@ -8,7 +8,7 @@ const LibrarySong = ({
     id, 
     audioRef, 
     isPlaying,
-    setSongs
+    setSongs,
 }) => {
     const songSelectHandler = async () => {
         const selectedSong = song;
@@ -31,6 +31,7 @@ const LibrarySong = ({
         setSongs(newSongs);
         //check if the song is playing
         if (isPlaying) audioRef.current.play();
+        
     };
     return(
         <div onClick={songSelectHandler} className={`library-song ${song.active ? 'selected' : ""}`}>
