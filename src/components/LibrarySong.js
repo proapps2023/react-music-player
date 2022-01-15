@@ -1,5 +1,5 @@
 import React from "react";
-import { playAudio } from "../util";
+
 
 const LibrarySong = ({
     song, 
@@ -10,9 +10,9 @@ const LibrarySong = ({
     isPlaying,
     setSongs
 }) => {
-    const songSelectHandler = () => {
+    const songSelectHandler = async () => {
         const selectedSong = song;
-        setCurrentSong(selectedSong);
+        await setCurrentSong(selectedSong);
         audioRef.current.play();
         //add active state
         const newSongs = songs.map((song) => {
@@ -30,7 +30,7 @@ const LibrarySong = ({
         });
         setSongs(newSongs);
         //check if the song is playing
-        playAudio(isPlaying, audioRef);
+        if (isPlaying) audioRef.current.play();
     };
     return(
         <div onClick={songSelectHandler} className={`library-song ${song.active ? 'selected' : ""}`}>
