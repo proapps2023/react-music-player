@@ -8,6 +8,8 @@
   overflow: scroll;
   transform: translateX(-100%);
   transition: all 0.5s ease;
+  opacity: 0;
+  background: white;
   h2 {
     padding: 2rem;
   }
