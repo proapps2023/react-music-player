@@ -1,7 +1,7 @@
 import React, {useState, useRef} from "react";
-
 import "./styles/app.scss";
 
+//imprt data
 import data from "./data";
 
 //adding components
@@ -22,8 +22,10 @@ function App() {
 		currentTime: 0,
 		duration: 0,
 		annimationPercentage: 0,
+		volume: 0,
 	});
 	const [libraryStatus, setLibraryStatus] = useState(false);
+
 	const timeUpdateHandler = (e) => {
         const current = e.target.currentTime;
         const duration = e.target.duration;
@@ -31,12 +33,12 @@ function App() {
 		const roundCurrent = Math.round(current);
 		const roundDuration = Math.round(duration);
 		const animation = Math.round((roundCurrent / roundDuration) * 100);
-		console.log(animation);
         setSongInfo({
 			...songInfo, 
 			currentTime:current, 
 			duration:duration, 
-			annimationPercentage:animation
+			annimationPercentage:animation,
+			volume: e.target.volume,
 		});
 
     };
@@ -46,11 +48,13 @@ function App() {
 		if (isPlaying) audioRef.current.play();    
 	};
 
-
     return (
     	<div className="App">
 			<Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
-    	    <Song currentSong={currentSong} />
+    	    <Song 
+				currentSong={currentSong} 
+				isPlaying={isPlaying}
+			/>
     	    <Player 
 				audioRef ={audioRef}
 				isPlaying={isPlaying} 

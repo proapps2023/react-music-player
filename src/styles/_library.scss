@@ -36,10 +36,14 @@
     font-family: "Poppins", sans-serif;
   }
 }
+
+//currently Firefox-only
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
 }
+
+//on Chrome/Edge/Safari
 *::-webkit-scrollbar {
   width: 5px;
 }
@@ -57,4 +61,10 @@
 .active-library {
   transform: translateX(0%);
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
 }

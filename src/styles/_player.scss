@@ -29,6 +29,16 @@
   svg {
     cursor: pointer;
   }
+  input[type="range"]::-moz-range-track {
+    background-color: rgb(223, 222, 222);
+    height: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  input[type="range"]::-moz-range-progress {
+    background-color: rgb(54, 52, 52);
+    height: 0.5rem;
+    border-radius: 0.5rem;
+  }
 }
 input[type="range"]:focus {
   outline: none;
@@ -60,4 +70,5 @@ input[type="range"]::-moz-range-thumb {
   left: 0;
   transform: translateX(0%);
   pointer-events: none;
+  padding: 1rem;
 }
