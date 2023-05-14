@@ -4,12 +4,12 @@ function chillHop() {
     return [
 
         {
-            name:"Sunny in Saint Petersburg",
-            artist: "Saib",
-            cover: "https://chillhop.com/wp-content/uploads/2021/03/75adfe0661d06a9ea66d9c2e99b31e92ae450ebe-1024x1024.jpg",
+            name:"Musica Llanera",
+            artist: "Radio",
+            cover: "https://img.freepik.com/foto-gratis/hermosa-chica-sombrero-vaquero-guitarra-acustica_155003-10943.jpg?",
             id: uuidv4(),
             color: ["#F24933", "#F9B437"],
-            audio: "https://mp3.chillhop.com/serve.php/?mp3=16076",
+            audio: "https://stream-034.zeno.fm/p4kss55ksv8uv?zs=-XcaiIxIThySOaJ7Yoc3_A",
             active: true,
         },
         {
